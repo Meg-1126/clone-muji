@@ -56,17 +56,58 @@ a:hover {
 
 .icon-search {
   width: 25%;
+  height: 30px;
   display: flex;
   justify-content:right;
   align-items: center;
   position: relative;
 }
 
+.icon-search.active .input {
+  width: 240px;
+  height: 30px;
+}
+
+.icon-search.active .btn {
+  transform: translateX(-210px);
+  background-color: #EBEBEB;
+  border-radius: 10px;
+  width: 20px;
+}
+
+.input {
+  width: 28px;
+  height: 25px;
+  background-color: #EBEBEB;
+  border-radius: 20px;
+  border: none;
+  text-indent: 15%;
+  transition: width 0.3s;
+  float: right;
+  font-size: 13px;
+  color: rgb(102, 102, 102);
+}
+
+.input:focus {
+  outline: none;
+}
+
+
+.btn  {
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
+  border: none;
+  position: absolute;
+  top:0;
+  right:0;
+  transition: transform 0.3s ease;
+}
+
+
 .icon-search img {
   width: 16px;
   height: 16px;
-  position: absolute;
-  right: 10px;
 }
 
 .icon-search img:hover {
